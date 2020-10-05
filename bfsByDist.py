@@ -117,7 +117,7 @@ while(mat):
 
 
 # Rearragning the final array - max in a simpler format 
-# a list (m parallele slots) of list (T time slots)  of lists (one slot of k shops)
+# a list (m parallel slots) of list (T time slots)  of lists (one slot of k shops)
 mat=[]
 for row in max:
   mr=[]
@@ -134,7 +134,7 @@ for i in range(T):
     mat[i][j] = [x + 1 for x in mat[i][j]]
     
 # Printing the output in the prescribed format 
-# a list (m parallele slots) of list (T time slots)  of lists (one slot of k shops)   
+# a list (m parallel slots) of list (T time slots)  of lists (one slot of k shops)   
 for j in range(m):
   for i in range(T):
     if i<T-1:
