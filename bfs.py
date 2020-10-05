@@ -123,7 +123,7 @@ for i in range(T):
 
 
 # Printing the output in the prescribed format
-# a list (m parallele slots) of list (T time slots)  of lists (one slot of k shops)
+# a list (m parallel slots) of list (T time slots)  of lists (one slot of k shops)
 for i in range(m):
   for j in range(T):
     if j<T-1:
