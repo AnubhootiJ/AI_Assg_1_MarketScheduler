@@ -136,7 +136,7 @@ for count in range(num_restart):
   
 
   ##update the result state if a restart gives better goodness##
-  if(total_goodness(local_result_schedule)>global_optimal_goodness):
+  if (total_goodness(local_result_schedule)>global_optimal_goodness):
     global_optimal_goodness = total_goodness(local_result_schedule)
     global_result_schedule= local_result_schedule
 
