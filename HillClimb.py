@@ -127,19 +127,20 @@ for count in range(num_restart):
          for l1 in range(T):
            for l2 in range((l1+1),T):
              neighbor = swap_function(schedule,j1,j2,l1,l2,i1)                          
-             if(total_goodness(neighbor)>local_optimal_goodness):
+             if (total_goodness(neighbor)>local_optimal_goodness):
                local_optimal_goodness = total_goodness(neighbor)               
                local_result_schedule = neighbor
                update_flag = 1
     ################# end of successor generate############################
   ################## end of climbing #######################
-  ########end of a restart##########
+  
 
   ##update the result state if a restart gives better goodness##
   if(total_goodness(local_result_schedule)>global_optimal_goodness):
     global_optimal_goodness = total_goodness(local_result_schedule)
     global_result_schedule= local_result_schedule
 
+ ########end of a restart##########
 
 
 ##Adjusting the shop values by adding 1 to it##
